@@ -1,0 +1,77 @@
+body {
+    margin: 0;
+    padding: 0;
+    min-height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background: linear-gradient(135deg, #f5f7fa 0%, #e3e6e8 100%);
+    font-family: 'Microsoft YaHei', sans-serif;
+    color: #4a5568;
+}
+
+.container {
+    text-align: center;
+    padding: 2rem;
+}
+
+.magic-button {
+    padding: 20px 40px;
+    font-size: 1.1rem;
+    background: linear-gradient(45deg, #a8c0ff, #8e9ac2);
+    color: #fff;
+    border: none;
+    border-radius: 15px;
+    cursor: pointer;
+    transition: all 0.3s ease;
+    box-shadow: 0 5px 15px rgba(168, 192, 255, 0.3);
+    min-width: 200px;
+}
+
+.magic-button:hover {
+    transform: translateY(-3px);
+    box-shadow: 0 8px 20px rgba(168, 192, 255, 0.4);
+    background: linear-gradient(45deg, #94b0ff, #7d8bb5);
+}
+
+.button-text {
+    margin: 5px 0;
+    font-size: 1rem;
+    opacity: 0.9;
+}
+
+.button-text:first-child {
+    font-size: 1.2rem;
+    opacity: 1;
+    margin-bottom: 8px;
+}
+
+.response-text {
+    margin-top: 2rem;
+    color: #4a5568;
+    font-size: 1.1rem;
+    line-height: 1.8;
+    max-width: 800px;
+    opacity: 0;
+    transition: opacity 0.5s ease;
+    text-align: left;
+    padding: 25px;
+    background: rgba(255, 255, 255, 0.8);
+    border-radius: 15px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.05);
+}
+
+.response-text .lang {
+    display: block;
+    margin-bottom: 15px;
+    padding: 8px 0;
+    border-bottom: 1px solid rgba(74, 85, 104, 0.1);
+}
+
+.response-text .lang:last-child {
+    border-bottom: none;
+}
+
+.response-text.visible {
+    opacity: 1;
+}
