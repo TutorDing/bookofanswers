@@ -3,17 +3,28 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>答案之书 | Book of Answers | Sách Trả Lời</title>
-    <link rel="stylesheet" href="style.css">
+    <title>易经抽签</title>
+    <link rel="stylesheet" href="styles.css">
 </head>
 <body>
     <div class="container">
-        <button id="askButton" class="magic-button">
-            <div class="button-text">答案之书</div>
-            <div class="button-text">Book of Answers</div>
-            <div class="button-text">Sách Trả Lời</div>
+        <button id="shakeButton" class="shake-button">
+            摇一摇
+            <div class="tube-container">
+                <div class="tube">
+                    <svg viewBox="0 0 100 100" class="tube-icon">
+                        <path d="M30,20 L70,20 L65,80 L35,80 Z" fill="currentColor"/>
+                        <rect x="45" y="10" width="10" height="10" fill="currentColor"/>
+                    </svg>
+                </div>
+            </div>
         </button>
-        <div id="response" class="response-text"></div>
+        
+        <div id="result" class="result-container">
+            <div id="hexagramName" class="hexagram-name"></div>
+            <div id="lineNumber" class="line-number"></div>
+            <div id="lineText" class="line-text"></div>
+        </div>
     </div>
     <script src="script.js"></script>
 </body>
